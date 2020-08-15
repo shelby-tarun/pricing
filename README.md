@@ -45,3 +45,41 @@ A modal is a generalised component which can be further forked in order to meet 
 #### Activation Modal
 
 It uses modal component to input user information when `Start your Trial` or `Get in Touch` is clicked.
+
+### Constant.js
+
+It contains all the static data.
+
+## Project Structure
+
+```
+\pricing\src\public
+│   index.js
+|   index.scss
+|   serviceWorker.js
+|   setupTests.js
+|   README.md
+├───components
+├─────────Modal
+|             index.jsx
+|             Modal.scss
+├───container
+├─────────App
+│             App.scss
+│             App.test.js
+│             index.jsx
+├─────────Navigation
+|             index.jsx
+|             Navigation.scss
+├─────────────Plans
+│                 index.jsx
+│                 Plans.scss
+├─────────────────Plan
+│                     index.jsx
+│                     Plan.scss
+├─────────────────────ActivationModal
+|                         ActivationModal.scss
+|                         index.jsx
+├───utils
+|       constants.js
+```

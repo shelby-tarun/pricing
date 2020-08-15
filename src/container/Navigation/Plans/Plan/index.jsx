@@ -3,7 +3,7 @@ import "./Plan.scss";
 import ActivationModal from "./ActivationModal";
 
 const PricingCard = (props) => {
-  const { planDetails } = props;
+  const { planDetails = {}, contactUsCard = false } = props;
   const [showActivationModal, setShowActivationModal] = useState(false);
 
   const isPopular = planDetails.isPopular;
@@ -55,15 +55,7 @@ const PricingCard = (props) => {
       <div className="plan__name consistent-padding">
         {planDetails.plan_name}
       </div>
-      <div
-        className="consistent-padding"
-        style={{
-          height: "281px",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-around",
-        }}
-      >
+      <div className="consistent-padding">
         <h3>Want more than 80 qualified leads each month?</h3>
       </div>
       <button
@@ -75,7 +67,7 @@ const PricingCard = (props) => {
     </Fragment>
   );
   return (
-    <div className="plan">
+    <div className={`plan ${contactUsCard ? "plan__more" : ""}`}>
       {showActivationModal && (
         <ActivationModal
           height="fit-content"
@@ -87,7 +79,7 @@ const PricingCard = (props) => {
           onSuccess={handleActivation}
         />
       )}
-      {planDetails.contact_us ? renderContactUsCard() : renderPricingCard()}
+      {contactUsCard ? renderContactUsCard() : renderPricingCard()}
     </div>
   );
 };

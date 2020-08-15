@@ -1,11 +1,3 @@
-export const categories = {
-  100: '$100K - $200K',
-  200: '$200K - $300K',
-  300: '$300K - $400K',
-  400: '$400K - $500K',
-  500: '$500K +'
-}
-
 export const plansDetail = {
   '$100K - $200K': [
     {
@@ -41,11 +33,6 @@ export const plansDetail = {
       total_platform_price: '$799',
       final_package_price: '$5,839',
     },
-    {
-      contact_us: true,
-      plan_name: 'Enterprise',
-      buttonText: 'Get in Touch'
-    }
   ],
   '$200K - $300K': [
     {
@@ -81,11 +68,6 @@ export const plansDetail = {
       total_platform_price: '$799',
       final_package_price: '$6,559',
     },
-    {
-      contact_us: true,
-      plan_name: 'Enterprise',
-      buttonText: 'Get in Touch'
-    }
   ],
   '$300K - $400K': [
     {
@@ -121,11 +103,6 @@ export const plansDetail = {
       total_platform_price: '$799',
       final_package_price: '$7,999',
     },
-    {
-      contact_us: true,
-      plan_name: 'Enterprise',
-      buttonText: 'Get in Touch'
-    }
   ],
   '$400K - $500K': [
     {
@@ -161,11 +138,6 @@ export const plansDetail = {
       total_platform_price: '$799',
       final_package_price: '$8,719',
     },
-    {
-      contact_us: true,
-      plan_name: 'Enterprise',
-      buttonText: 'Get in Touch'
-    }
   ],
   '$500K +': [
     {
@@ -201,11 +173,6 @@ export const plansDetail = {
       total_platform_price: '$799',
       final_package_price: '$10,159',
     },
-    {
-      contact_us: true,
-      plan_name: 'Enterprise',
-      buttonText: 'Get in Touch'
-    }
   ],
 }
 

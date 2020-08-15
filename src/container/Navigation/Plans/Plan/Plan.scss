@@ -10,6 +10,7 @@
     background-color: var(--color-primary);
     color: white;
     font-weight: 500;
+    height: 20px;
   }
 
   &__price-per-lead {
@@ -42,6 +43,13 @@
     background-color: var(--color-primary);
     margin: 0 0 10px 0;
     color: white;
+  }
+
+  &__more {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
   }
 
   &--most-popular {

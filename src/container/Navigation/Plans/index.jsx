@@ -14,7 +14,12 @@ const Plans = (props) => {
     ));
   };
 
-  return <ul className="plans">{renderPlans()}</ul>;
+  return (
+    <ul className="plans">
+      {renderPlans()}
+      <Plan key="contact_us" contactUsCard></Plan>
+    </ul>
+  );
 };
 
 export default Plans;

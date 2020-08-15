@@ -1,25 +1,18 @@
-import React, { useState } from "react";
-
-import { categories } from "../../utils/constants";
-import Plans from "./Plans";
+import React from "react";
 import "./Navigation.scss";
 
-const categoryNames = Object.values(categories);
-
 const Navigation = (props) => {
-  const { defaultCategory = "$300K - $400K" } = props;
-
-  const [selectedCategory, setSelectedCategory] = useState(defaultCategory);
+  const { categories = [], activeCategory, onCategoryChange } = props;
 
   const renderTabs = () => {
-    return categoryNames.map((category) => (
+    return categories.map((category) => (
       <li
         key={category}
         className={`navigation__tab${
-          selectedCategory === category ? " navigation__tab--selected" : ""
+          activeCategory === category ? " navigation__tab--selected" : ""
         }`}
         onClick={() => {
-          setSelectedCategory(category);
+          onCategoryChange(category);
         }}
       >
         {category}
@@ -27,21 +20,7 @@ const Navigation = (props) => {
     ));
   };
 
-  return (
-    <div
-      className="container"
-      style={{
-        padding: "1rem 2rem",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        height: "100%",
-      }}
-    >
-      <ul className="navigation">{renderTabs()}</ul>
-      <Plans activeCategory={selectedCategory} />
-    </div>
-  );
+  return <ul className="navigation">{renderTabs()}</ul>;
 };
 
 export default Navigation;
