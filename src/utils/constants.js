@@ -260,7 +260,7 @@ export const activationFormJSON = [
     defaultValue: "",
   },
   {
-    name: "Which are biggest lead sources?",
+    name: "What are your biggest lead sources?",
     formName: "leadSource",
     type: "checkboxGroup",
     columns: 2,
@@ -292,7 +292,7 @@ export const activationFormJSON = [
     ],
   },
   {
-    name: "How did you hear about us?",
+    name: "How did you hear about us",
     formName: "reference",
     type: "checkboxGroup",
     columns: 2,

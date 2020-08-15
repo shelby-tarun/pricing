@@ -58,7 +58,7 @@ const ActivationModal = (props) => {
               className="activationModal__form__label"
               style={+field.columns === 2 ? { gridColumn: "1/3" } : {}}
             >
-              <span>How did you hear about us?</span>
+              <span>{field.name}</span>
               <div>{renderCheckboxes(field.formName)}</div>
             </div>
           );

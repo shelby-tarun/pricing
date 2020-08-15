@@ -1,8 +1,6 @@
 # Pricing Component for SquadVoice
 
-[https://o1fut.csb.app/](https://o1fut.csb.app/)
-
-codesandbox - [https://codesandbox.io/s/silly-yonath-o1fut?file=/src/index.js](https://codesandbox.io/s/silly-yonath-o1fut?file=/src/index.js)
+codesandbox - [https://codesandbox.io/s/cocky-carson-ez7oy](https://codesandbox.io/s/cocky-carson-ez7oy)
 
 github - [https://github.com/shelby-tarun/pricing](https://github.com/shelby-tarun/pricing)
 
