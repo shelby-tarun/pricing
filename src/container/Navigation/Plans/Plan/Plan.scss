@@ -1,0 +1,83 @@
+.plan {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-text);
+
+  &__name {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 500;
+  }
+
+  &__price-per-lead {
+    border-bottom: 2px dotted lightgray;
+    width: 80%;
+    align-self: center;
+    padding: 10px;
+    h1 {
+      font-weight: 500;
+      color: var(--color-text);
+      margin: 5px 0;
+    }
+    p {
+      margin: 0 !important;
+    }
+  }
+
+  &__leads-per-month {
+    padding: 10px;
+    border-bottom: 2px dotted lightgray;
+    width: 80%;
+    align-self: center;
+  }
+
+  &__platform-per-month {
+    padding: 10px;
+  }
+
+  &__total {
+    background-color: var(--color-primary);
+    margin: 0 0 10px 0;
+    color: white;
+  }
+
+  &--most-popular {
+    background-color: var(--color-secondary) !important;
+    color: white !important;
+    font-weight: 500;
+  }
+
+  & button {
+    cursor: pointer;
+    border: 1px solid var(--color-secondary);
+    border-radius: 2px;
+    color: var(--color-secondary);
+    background-color: white;
+    font-weight: 600;
+    outline: 0;
+  }
+
+  & p {
+    margin: 5px 0;
+    font-size: 90%;
+  }
+
+  & span {
+    font-weight: 500;
+  }
+
+  &:nth-child(odd) {
+    background-color: white;
+  }
+
+  &:nth-child(even) {
+    background-color: var(--color-additional);
+  }
+}
+
+.consistent-padding {
+  padding: 10px;
+}
